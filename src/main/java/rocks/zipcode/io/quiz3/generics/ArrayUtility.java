@@ -29,6 +29,5 @@ public class ArrayUtility<SomeType> {
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
         return null;
-//        return  Arrays.stream(array).filter(predicate).collect(Collectors.<SomeType>toList());;
     }
 }
