@@ -8,25 +8,26 @@ public class WaveGenerator {
 
     public static String[] wave(String str) {
          String string = str.toLowerCase();
-         String[] arr = new String[str.length()];
+
          String toAdd = "";
-        Integer legth = 0;
+        Integer length = 0;
 
         for (int i = 0; i <str.length() ; i++) {
-            ///need to handle for non letter chars.
+            if(Character.isLetter(str.charAt(i))){
+                length++;
+            }
         }
 
-        for (int i = 0; i < str.length(); i++) {
-            for (int j = 0; j <str.length() ; j++) {
-                if(j == i) {
-                    toAdd += Character.toUpperCase(string.charAt(j));
-                }else{
-                    toAdd+= string.charAt(j);
-                }
+        String[] arr = new String[length];
+
+        int counter = 0;
+        for (int i = 0; i <string.length() ; i++) {
+            if (Character.isLetter(str.charAt(i))) {
+                arr[counter] = string.substring(0, i) + Character.toUpperCase(string.charAt(i)) + string.substring(i + 1);
+                counter++;
             }
-            arr[i] = toAdd;
-            toAdd = "";
         }
+//
         return arr;
     }
 
