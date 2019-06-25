@@ -8,8 +8,6 @@ public class WaveGenerator {
 
     public static String[] wave(String str) {
          String string = str.toLowerCase();
-
-         String toAdd = "";
         Integer length = 0;
 
         for (int i = 0; i <str.length() ; i++) {

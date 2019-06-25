@@ -27,7 +27,6 @@ public class StringUtils {
         for (int i = 0; i < string.length(); i++) {
             for (int j = i + 1; j <= string.length(); j++) {
                 set.add(string.substring(i, j));
-
             }
         }
         String[] array = set.stream().toArray(String[]::new);

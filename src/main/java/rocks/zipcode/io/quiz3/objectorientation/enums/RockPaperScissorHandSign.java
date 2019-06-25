@@ -27,19 +27,7 @@ public enum RockPaperScissorHandSign {
         }
 
             public RockPaperScissorHandSign getLoser () {
-                RockPaperScissorHandSign lose = null;
 
-                switch (this) {
-                    case PAPER:
-                        lose =ROCK;
-                        break;
-                    case ROCK:
-                        lose = SCISSOR;
-                        break;
-                    case SCISSOR:
-                        lose = PAPER;
-                        break;
-                }
-                return lose;
+            return this.getWinner().getWinner();
         }
 }

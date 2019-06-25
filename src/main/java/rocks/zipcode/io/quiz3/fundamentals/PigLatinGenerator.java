@@ -23,11 +23,7 @@ public class PigLatinGenerator {
                 returnString += " ";
             }
         }
-//        String firstPart = str.substring(0, getIndexOfFirstVowel(str));
-//
-//        String pigString = str.substring(getIndexOfFirstVowel(str)) + firstPart + "ay";
-//        return pigString;
-//
+
         return returnString;
     }
 

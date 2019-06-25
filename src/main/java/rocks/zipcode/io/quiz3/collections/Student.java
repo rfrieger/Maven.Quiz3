@@ -8,10 +8,11 @@ import java.util.stream.Stream;
  * @author leon on 10/12/2018.
  */
 public class Student {
-    List<Lab> labs;
+    List<Lab> labs = new ArrayList<>();;
 
     public Student() {
         this(new ArrayList<>());
+
     }
 
     public Student(List<Lab> labs) {
