@@ -9,7 +9,7 @@ import java.util.stream.Stream;
  */
 public class StringUtils {
     public static String capitalizeNthCharacter(String str, Integer indexToCapitalize) {
-        return str.substring(indexToCapitalize) + str.charAt(indexToCapitalize) + str.substring(indexToCapitalize +1);
+        return str.substring(0, indexToCapitalize) + Character.toUpperCase(str.charAt(indexToCapitalize)) + str.substring(indexToCapitalize +1);
 
     }
 
